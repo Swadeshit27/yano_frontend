@@ -23,6 +23,7 @@ export interface BGMManagerType {
   getHistory(deviceSn: string, eventIndex: number): Promise<any>;
 }
 
+//TODO: Test after connecting with physical device.
 export enum BGMErrorCode {
   /** Not found equipment */
   ERROR_DEVICE_MISS = 1,
