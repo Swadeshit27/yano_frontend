@@ -37,6 +37,9 @@ import HospitalizationDetails from '../../screens/healthCondition/hospitalizatio
 import AddAndEditHospitalization from '../../screens/healthCondition/hospitalization/AdddAndEditHospitalization';
 import SocialHistoryHomeScreen from '../../screens/healthCondition/socailHistory/SocialHistoryHomeScreen';
 import AddAndEditSocialHistory from '../../screens/healthCondition/socailHistory/AddAndEditSocailHistory';
+import { Screen } from 'react-native-screens';
+import ConsultancyNotes from '../../screens/healthCondition/consultancyNotes/ConsultancyNotes';
+import ConsultancyNotesDetails from '../../screens/healthCondition/consultancyNotes/ConsultancyNoteDetails';
 
 const Tab = createBottomTabNavigator();
 
@@ -295,6 +298,22 @@ const MainStack = () => {
         }}
       />
       {/* Social History screen Navigation end */}
+      {/* Consultation Notes screen Navigation start */}
+      <Stack.Screen
+        name="ConsultationNotes"
+        component={ConsultancyNotes}
+        options={{
+          headerShown: false
+        }}
+      />
+      <Stack.Screen
+        name="ConsultationNotesDetails"
+        component={ConsultancyNotesDetails}
+        options={{
+          headerShown: false
+        }}
+      />
+      {/* Consultation Notes screen Navigation end */}
 
 
       {/* Medical History screen Navigation end */}

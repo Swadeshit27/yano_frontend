@@ -1,4 +1,4 @@
-import { Image, SafeAreaView, StyleSheet, View } from 'react-native'
+import { Image, SafeAreaView, View } from 'react-native'
 import React from 'react'
 import { Colors } from '../../constants/Colors'
 import Header from '../../components/header/Header'
@@ -54,9 +54,3 @@ const MedicalHistory = ({ navigation }: any) => {
 }
 
 export default MedicalHistory
-
-const styles = StyleSheet.create({
-    box: {
-
-    }
-})

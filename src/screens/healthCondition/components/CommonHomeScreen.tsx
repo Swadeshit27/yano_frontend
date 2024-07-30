@@ -3,9 +3,9 @@ import React, { FC } from 'react';
 import { Colors } from '../../../constants/Colors'; 
 import FilledButton from '../../../components/buttons/FilledButton';
 import { PlusIcon } from '../../../assets/icon/IconNames';
-import EmptyScreen from './EmptyScreen';
-import HealthConditionItems from './HomeItems';
+import EmptyScreen from './EmptyScreen'; 
 import CommonHeader from './CommonHeader';
+import HomeItems from './HomeItems';
 
 type CommonHomeScreenProps = {
     navigation: any;
@@ -36,7 +36,7 @@ const CommonHomeScreen: FC<CommonHomeScreenProps> = ({
             <CommonHeader title={heading} />
             {
                 data && data.length > 0 ?
-                    <HealthConditionItems
+                    <HomeItems
                         data={data}
                         path={viewItem_path}
                         navigation={navigation}

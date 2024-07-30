@@ -58,3 +58,33 @@ export const CheckboxOutline = () => {
     />
   );
 }
+
+
+export const CheckCircleIcon = () => {
+  return (
+    <Icons.MaterialIcons
+      name={'radio-button-on'}
+      color={Colors.Green}
+      size={20}
+    />
+  );
+}
+export const CheckIcon = () => {
+  return (
+    <Icons.MaterialIcons
+      name={'radio-button-off'}
+      color={Colors.SteelBlue}
+      size={20}
+    />
+  );
+}
+
+export const DownloadIcon = () => {
+  return (
+    <Icons.Feather
+      name={'download'}
+      color={Colors.Blue}
+      size={20}
+    />
+  );
+}

@@ -9,6 +9,7 @@ import { useForm, Control, FieldValues } from 'react-hook-form';
 import CustomSelect from '../../../components/formComp/SelectFiled'; 
 import CustomDatePicker from '../../../components/formComp/CustomDatePicker'; 
 import CommonHeader from '../components/CommonHeader';
+import CustomRadioButton from '../../../components/formComp/CustomRadio';
 
 
 interface FormValues {
@@ -156,7 +157,7 @@ const AddAndEditSocialHistory = ({ navigation, route }: any) => {
                                 { label: 'Asexual', value: 'asexual' },
                             ]}
                         />
-                        <CustomSelect
+                        <CustomRadioButton 
                             label='Do you smoke?'
                             name='isSmoke'
                             control={control as unknown as Control<FieldValues, object>}
@@ -165,7 +166,7 @@ const AddAndEditSocialHistory = ({ navigation, route }: any) => {
                                 { label: 'No', value: 'no' },
                             ]}
                         />
-                        <CustomSelect
+                        <CustomRadioButton 
                             label='Do you consume alcohol?'
                             name='consumeAlcohol'
                             control={control as unknown as Control<FieldValues, object>}

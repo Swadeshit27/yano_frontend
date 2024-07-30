@@ -1,10 +1,10 @@
 import { Alert, ScrollView, StyleSheet, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { Colors } from '../../constants/Colors'
-import Header from '../../components/header/Header'
+import { Colors } from '../../constants/Colors' 
 import { DeleteIcon, EditIcon } from '../../assets/icon/IconNames'
 import DetailItems from './components/DetailItems'
+import CommonHeader from './components/CommonHeader'
 
 const HealthConditionDetails = ({ navigation, route }: any) => {
     if (!route || !route.params) {
@@ -20,7 +20,7 @@ const HealthConditionDetails = ({ navigation, route }: any) => {
                 backgroundColor: Colors.LightGray,
                 position: 'relative',
             }}>
-            <Header
+            <CommonHeader
                 title={name}
                 rightComp1={
                     <TouchableOpacity
